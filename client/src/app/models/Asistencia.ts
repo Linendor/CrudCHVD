@@ -1,7 +1,7 @@
 export interface Asistencia{
 
     id?: number;
-    nombre?: string;
+    nombreusu?: string;
     horainicio?: Date;
     
     

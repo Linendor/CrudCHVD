@@ -15,7 +15,9 @@ export class RegistroService {
   constructor(private http: HttpClient) { }
 
 
-
+getAsis(){
+  return this.http.get(`${this.API_URI}/usuarios/as`)
+}
 
   getUsuarios() {
     return this.http.get(`${this.API_URI}/usuarios`);
@@ -29,13 +31,16 @@ export class RegistroService {
     return this.http.delete(`${this.API_URI}/usuarios/${id}`);
   }
 
-  save(game: Usuario) {
-    return this.http.post(`${this.API_URI}/usuarios`, game);
+  save(usuario: Usuario) {
+    return this.http.post(`${this.API_URI}/usuarios`, usuario);
   }
 
 
-  update(id: string|number, updatedGame: Usuario): Observable<Usuario> {
-    return this.http.put(`${this.API_URI}/usuarios/${id}`, updatedGame);
+  update(id: string|number, updatedusu: Usuario): Observable<Usuario> {
+    return this.http.put(`${this.API_URI}/usuarios/${id}`, updatedusu);
   }
+
+
+
 
 }

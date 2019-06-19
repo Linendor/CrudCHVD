@@ -1,9 +1,10 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { Usuario } from 'src/app/models/Usuario';
-import {Asistencia} from 'src/app/models/Asistencia';
+
 
 import { RegistroService } from 'src/app/services/registro.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Asistencia } from 'src/app/models/Asistencia';
 
 @Component({
   selector: 'app-registro-form',
@@ -23,8 +24,16 @@ export class RegistroFormComponent implements OnInit {
     telefono: '',
     correo: '',
     plantel: '',
-    perfil: ''
+    perfil: '',
+    user_id:0,
+    creado: new Date()
   };
+
+  asis: Asistencia ={
+    id:0,
+    nombreusu:'',
+    horainicio: new Date()
+  }
 
  
   edit: boolean = false;

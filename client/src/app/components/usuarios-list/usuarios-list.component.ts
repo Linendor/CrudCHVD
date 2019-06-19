@@ -13,7 +13,7 @@ export class UsuariosListComponent implements OnInit {
 
   @HostBinding('class') classes = 'row';
 
-  usu: any = [];
+   Usua: any = [];
   
   constructor(private registroService: RegistroService) { }
 
@@ -26,11 +26,15 @@ export class UsuariosListComponent implements OnInit {
   getUsuarios() {
     this.registroService.getUsuarios()
       .subscribe(
-        res => {
-          this.usu = res;
+        res => 
+
+         {
+           console.log(res)
+           this.Usua = res
         },
+        
         err => console.error(err)
-      );
+      )
   }
 
   

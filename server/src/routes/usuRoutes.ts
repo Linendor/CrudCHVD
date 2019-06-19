@@ -11,7 +11,7 @@ class Routes {
     }
 
     config() {
-      
+      this.router.get('/as',usuariosController.listAs);
         this.router.get('/', usuariosController.list);
         
         this.router.get('/:id', usuariosController.getOne);

@@ -10,5 +10,7 @@ export interface Usuario {
     correo?: string;
     plantel?: string;
     perfil?: string;
+    user_id?: number;
+    creado?: Date
 };
 

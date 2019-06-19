@@ -11,13 +11,19 @@ import { UsuariosListComponent } from './components/usuarios-list/usuarios-list.
 // Services
 import { RegistroService } from './services/registro.service';
 import { RegistroFormComponent } from './components/registro-form/registro-form.component';
+import { AsistenciaComponent } from './components/asistencia/asistencia.component';
+import { LoginComponent } from './components/login/login.component';
+import { IndexComponent } from './componentes/index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     UsuariosListComponent,
-    RegistroFormComponent
+    RegistroFormComponent,
+    AsistenciaComponent,
+    LoginComponent,
+    IndexComponent
     
   ],
   imports: [

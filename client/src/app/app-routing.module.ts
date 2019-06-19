@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { UsuariosListComponent } from './components/usuarios-list/usuarios-list.component';
 import { RegistroFormComponent } from './components/registro-form/registro-form.component';
+import { AsistenciaComponent} from './components/asistencia/asistencia.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'usuarios',
+    path: 'usuariol',
     component: UsuariosListComponent
   },
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
     path: 'registro/editar/:id',
     component: RegistroFormComponent
   },
+  {
+    path: 'asis',
+    component: AsistenciaComponent
+  }
  
  
 ];
